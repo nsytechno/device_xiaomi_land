@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_land.mk
+    $(LOCAL_DIR)/dot_land.mk
