@@ -336,8 +336,8 @@ int process_sensor_data(cam_sensor_params_t *p_sensor_params,
   } else {
     flash_fired = 0;
   }
-  LOGD("Flash mode %d flash state %d",
-    p_sensor_params->flash_mode, p_sensor_params->flash_state);
+//  LOGD("Flash value %d flash mode %d flash state %d", val_short,
+//    p_sensor_params->flash_mode, p_sensor_params->flash_state);
 
   switch(p_sensor_params->flash_mode) {
   case  CAM_FLASH_MODE_OFF:
@@ -354,6 +354,8 @@ int process_sensor_data(cam_sensor_params_t *p_sensor_params,
     LOGE(": Unsupported flash mode");
   }
   val_short = (short)(flash_fired | (flash_mode_exif << 3));
+  LOGD("Flash value %d flash mode %d flash state %d", val_short,
+    p_sensor_params->flash_mode, p_sensor_params->flash_state);
 
   rc = addExifEntry(exif_info, EXIFTAGID_FLASH, EXIF_SHORT, 1, &val_short);
   if (rc) {

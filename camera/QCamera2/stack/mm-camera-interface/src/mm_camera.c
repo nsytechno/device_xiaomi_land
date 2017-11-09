@@ -2250,8 +2250,7 @@ static module_debug_t cam_loginfo[(int)CAM_LAST_MODULE] = {
  *
  *  Return: logging level
  **/
-__unused
-static cam_global_debug_level_t cam_get_dbg_level(const char *module,
+/*static cam_global_debug_level_t cam_get_dbg_level(const char *module,
   char *pValue) {
 
   cam_global_debug_level_t rc = CAM_GLBL_DBG_NONE;
@@ -2277,7 +2276,7 @@ static cam_global_debug_level_t cam_get_dbg_level(const char *module,
   ALOGD("%s debug log level: %s\n", module, cam_dbg_level_to_str[rc]);
 
   return rc;
-}
+}*/
 
 /** cam_vsnprintf
  *    @pdst:   destination buffer pointer
