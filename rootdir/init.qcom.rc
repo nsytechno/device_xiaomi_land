@@ -680,7 +680,7 @@ on property:persist.sys.fp.onstart=0
    start gx_fpd
 
 on property:persist.sys.fp.onstart=1
-   start fps_hal 
+   start fps_hal
 
 # Start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
