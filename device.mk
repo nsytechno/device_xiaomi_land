@@ -217,8 +217,7 @@ PRODUCT_COPY_FILES += \
 
 # Libshims
 PRODUCT_PACKAGES += \
-    libshim_display_camera \
-    libshim_ims_camera
+    libshim_display_camera
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
