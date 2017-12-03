@@ -113,9 +113,11 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.device@1.0-impl \
+    camera.device@1.0-impl.legacy \
     camera.device@3.2-impl \
-    android.hardware.camera.provider@2.4-impl
+    android.hardware.camera.provider@2.4-impl.legacy \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0_vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -147,8 +149,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -182,9 +184,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
     android.hardware.gnss@1.0-service-qti
 
-PRODUCT_BOOT_JARS += \
-    com.qti.location.sdk
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/vendor/etc/flp.conf \
     $(LOCAL_PATH)/gps/etc/gps.conf:system/vendor/etc/gps.conf \
@@ -202,11 +201,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
 # Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-impl \
-    android.hardware.health@1.0-convert \
-    android.hardware.health@1.0-service \
-    android.hardware.health@1.0
+#PRODUCT_PACKAGES += \
+#    android.hardware.health@1.0-impl \
+#    android.hardware.health@1.0-convert \
+#    android.hardware.health@1.0-service \
+#    android.hardware.health@1.0
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -294,9 +293,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
-    sensors.land
+    android.hardware.sensors@1.0-impl
     
 
 PRODUCT_COPY_FILES += \
