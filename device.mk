@@ -303,9 +303,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
 
-# Snap
+# SnapdragonCamera
 PRODUCT_PACKAGES += \
-    Camera2
+    SnapdragonCamera
 
 # Thermal
 PRODUCT_COPY_FILES += \
