@@ -287,6 +287,10 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     libxml2
 
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    ims-ext-common
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
